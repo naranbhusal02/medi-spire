@@ -121,7 +121,9 @@ h1, h2 {
 .cta-button:hover {
     background-color: #27ae60;
 }
-
+.specialtext{
+font-style: italic; 
+}
 .about, .founders, .appointment, .contact {
     background-color: white;
 }
