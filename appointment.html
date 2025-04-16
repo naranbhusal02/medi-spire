@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medispire</title>
+    <link href="https://iili.io/30wb7Db.png" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MedSpire</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="founders.html">Founders</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+        </nav>
+    <section id="appointment" class="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select a department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                </select>
+            </div>
+            <button type="submit" id="submitBtn">Get Appointment</button>
+            <div id="thankYouMessage" class="hidden">
+                <p>Thank you <span id="patientName"></span> for booking your appointment!</p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
